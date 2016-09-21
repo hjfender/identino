@@ -1,0 +1,108 @@
+<html>
+	<!-- Head and Metadata -->
+	<head>
+		<title>Identino Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/grayscale.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!-- Bootstrap and Theme JavaScript -->
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/grayscale.js"></script>
+		
+		<!-- Font Awesome -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Load libraries -->
+		<!-- IE required polyfill -->
+		<script src="node_modules/core-js/client/shim.min.js"></script>
+
+		<script src="node_modules/zone.js/dist/zone.js"></script>
+		<script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+		<script src="node_modules/rxjs/bundles/Rx.js"></script>
+		<script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+		<script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+		<script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+		<script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+		<script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+
+		<!-- Load 'modules' -->
+		
+	</head>
+	
+	<!-- Body -->
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button> -->
+					<a class="navbar-brand page-scroll" href="#page-top">
+						<i class="fa fa-eye"></i> Identino
+					</a>
+				</div>
+				<!-- Nav links for toggling -->
+				<!-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav"> -->
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<!-- <li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#identify">Identify!</a>
+						</li>
+					</ul>
+				</div> -->
+				<!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		
+		<!-- Welcome Header -->
+		<header class="intro">
+			<div class="intro-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="brand-heading">IDENTINO</h1>
+							<p class="intro-text">Identify strengths and weaknesses in your entrepreneurial ideas.</p>
+							<a href="#identify" class="btn btn-circle page-scroll">
+								<i class="fa fa-angle-double-down animated"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Identify Section -->
+		<section id="identify" class="content-section text-center">
+			<div class="search-section">
+				<div class="container">
+					<div class="col-lg-8 col-lg-offset-2">
+						<h1>Identify!</h1>
+						<label>SEARCH TERMS RELATED TO YOUR IDEA</label><br>
+						<form>
+							<input type="text" name="search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	 
+		<!-- Footer -->
+		<footer>
+			<div class="container text-center">
+				<p>Identino &copy 2016</p>
+			</div>
+		</footer>
+	</body>
+
+</html>
