@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Identino Search';
+        this.search_term = "";
     }
+    AppComponent.prototype.clicked = function () {
+        alert(this.search_term);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n\t\t\n\t"
+            template: "\n\t\t<div class=\"form-group\">\n\t\t\t<input [(ngModel)]=\"search_term\" class=\"form-control\" id=\"search_bar\" placeholder=\"Search\">\n\t\t\t<br>\n\t\t\t<button (click)=\"clicked()\" class=\"btn btn-primary\">Search</button>\n\t\t</div>\n\t"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
