@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"search_bar\" placeholder=\"Search\">\n\t\t\t</div>\n\t"
+            template: "\n\t\t\n\t"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
