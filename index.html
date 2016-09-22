@@ -31,6 +31,19 @@
 		<script>
 			System.import('app').catch(function(err){ console.error(err); });
 		</script>
+
+		<!-- Sigma.js -->
+		<script src="js/sigma.js"></script>
+		<script src="js/sigma.parsers.json.min.js"></script>
+		<script>
+			sigma.parsers.json(
+				'graph/graph.json',
+				{ // Here is the ID of the DOM element that
+				// will contain the graph:
+					container: 'sigma-container',
+				}
+			);
+		</script>
 		
 	</head>
 	
@@ -102,6 +115,23 @@
 				<p><a href="https://github.com/hjfender/identino"><i class="fa fa-github fa-fw"></i> Identino 2016 </a></p>
 			</div>
 		</footer>
+
+		<!-- Modal for displaying graph -->
+		<div class="modal fade" id="idea_map_modal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 style="color: black" class="modal-title">Identified Connections</h4>
+					</div>
+					<div class="modal-body">
+						<div id="sigma-container"></div>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 	</body>
 
 </html>

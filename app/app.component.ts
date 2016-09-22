@@ -14,6 +14,6 @@ export class AppComponent {
 	title = 'Identino Search';
 	search_term = "";
 	clicked() {
-		alert(this.search_term);
+		$('#idea_map_modal').modal('show');
 	}
 }

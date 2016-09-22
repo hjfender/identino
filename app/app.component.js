@@ -15,7 +15,7 @@ var AppComponent = (function () {
         this.search_term = "";
     }
     AppComponent.prototype.clicked = function () {
-        alert(this.search_term);
+        $('#idea_map_modal').modal('show');
     };
     AppComponent = __decorate([
         core_1.Component({
