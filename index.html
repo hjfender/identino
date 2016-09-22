@@ -32,19 +32,6 @@
 			System.import('app').catch(function(err){ console.error(err); });
 		</script>
 
-		<!-- Sigma.js -->
-		<script src="js/sigma.js"></script>
-		<script src="js/sigma.parsers.json.min.js"></script>
-		<script>
-			sigma.parsers.json(
-				'graph/graph.json',
-				{ // Here is the ID of the DOM element that
-				// will contain the graph:
-					container: 'sigma-container',
-				}
-			);
-		</script>
-
 		<!-- Modal Stuff -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
@@ -128,10 +115,20 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 style="color: black" class="modal-title">Identified Connections</h4>
+						<h4 style="color: black" class="modal-title" id="change-me">Identified Connections </h4>
 					</div>
 					<div class="modal-body">
-						<div id="sigma-container"></div>
+						<img src="img/network_placeholder.jpg" height="370px">
+						<!--<div id="sigma-container"></div>-->
+						<!-- Sigma.js -->
+						<!--<script src="js/sigma.js"></script>
+						<script src="js/sigma.parsers.json.min.js"></script>
+						<script>
+							sigma.parsers.json(
+								'graph/graph.json',
+								{ container: 'sigma-container' }
+							);
+						</script>-->
 					</div>
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->

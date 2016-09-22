@@ -12,10 +12,11 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Identino Search';
-        this.search_term = "";
+        this.search_term = '';
     }
     AppComponent.prototype.clicked = function () {
         $('#idea_map_modal').modal('show');
+        $('#change-me').text("Identified Connections for " + this.search_term);
     };
     AppComponent = __decorate([
         core_1.Component({

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare var sigma:any;
+
 @Component({
 	selector: 'my-app',
 	template: `
@@ -12,9 +14,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'Identino Search';
-	search_term = "";
+	search_term = '';
 
 	clicked() {
 		(<any>$('#idea_map_modal')).modal('show');
+		(<any>$('#change-me')).text("Identified Connections for " + this.search_term);
 	}
 }
