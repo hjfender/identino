@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	title = 'Identino Search';
 	search_term = "";
+
 	clicked() {
-		$('#idea_map_modal').modal('show');
+		(<any>$('#idea_map_modal')).modal('show');
 	}
 }

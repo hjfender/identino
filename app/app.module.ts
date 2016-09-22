@@ -9,9 +9,7 @@ import { AppComponent }  from './app.component';
 		BrowserModule,
 		FormsModule
 	],
-  declarations: [
-		AppComponent
-	],
+  declarations: [ AppComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
